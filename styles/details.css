@@ -1,0 +1,26 @@
+body {
+    background: royalblue;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+summary {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+p {
+    margin: 0 0 0 15px;
+}
+
+p::before {
+    content: '- ';
+}
+
+p:not(:last-child)::after {
+    content: ';';
+}
+
+p:last-child::after {
+    content: '.';
+}
